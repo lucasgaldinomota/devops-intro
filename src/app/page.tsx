@@ -8,7 +8,7 @@ export default function Home() {
   function renderizarConteudo(variavel: boolean) {
     if (variavel) {
       return (
-        <div className="flex justify-center items-center flex-1 p-5">
+        <div className="flex justify-center items-center flex-1 gap-2 p-2">
           <Image src="/images/meme-1.jpeg" alt="" width={500} height={300} />
           <Image src="/images/meme-2.png" alt="" width={300} height={300} />
           <Image src="/images/meme-3.png" alt="" width={300} height={300} />
@@ -18,7 +18,7 @@ export default function Home() {
     } else {
       return (
         <div className="flex justify-center items-center flex-1 p-5">
-          <Image src="/images/meme-extra.jpeg" alt="" width={1000} height={1000} />
+          <Image src="/images/meme-extra.jpeg" alt="" width={900} height={900} />
         </div >
       )
     }
@@ -31,7 +31,7 @@ export default function Home() {
       </div >
       {renderizarConteudo(variavel)}
       <div className="flex justify-center items-center h-20 bg-[rgb(0,74,247)]" >
-        <a className="text-white text-5xl">Introdução a DevOps</a>
+        <a className="text-white text-5xl">Fundamentos de DevOps</a>
       </div >
     </main>
   );
